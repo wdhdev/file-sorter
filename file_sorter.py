@@ -69,7 +69,7 @@ if confirm == "y" or confirm == "yes":
     for file in files:
         destination = directory + "\\Other"
 
-        if file == __file__.rsplit("\\", 1)[1] or not os.path.isfile(file):
+        if not os.path.isfile(file):
             continue
 
         amount += 1
@@ -93,5 +93,6 @@ if confirm == "y" or confirm == "yes":
     print()
     os.system("pause")
 else:
+    print("\n[41m ERROR [0m Operation cancelled by user.\n")
     os.system("pause")
     sys.exit()
