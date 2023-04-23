@@ -36,6 +36,7 @@ file_extensions = {
     "rtf": "Documents",
     "svg": "Images",
     "tiff": "Images",
+    "ts": "Programming",
     "txt": "Documents",
     "wav": "Audio",
     "webp": "Images",
