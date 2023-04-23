@@ -28,6 +28,7 @@ file_extensions = {
     "msi": "Installers",
     "ogg": "Audio",
     "pdf": "PDFs",
+    "php": "Programming",
     "png": "Images",
     "ppt": "Presentations",
     "pptx": "Presentations",
