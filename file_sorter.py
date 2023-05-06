@@ -1,4 +1,6 @@
-import os, shutil, sys
+import os
+import shutil
+import sys
 
 file_extensions = {
     "avi": "Videos",
