@@ -15,7 +15,7 @@ A simple file sorter for Windows which sorts files based on the file extension.
 | Category | Extensions |
 |:-:|-|
 | Audio | `m4a`, `mp3`, `ogg`, `wav`, `wma` |
-| Compressed Folders | `zip` |
+| Compressed Folders | `7z`, `gz`, `tar`, `zip` |
 | Documents | `csv`, `doc`, `docx`, `rtf`, `txt`, `xls`, `xlsb`, `xlsm`, `xlsx`, `xml` |
 | GIFs | `gif` |
 | Images | `jpeg`, `jpg`, `png`, `svg`, `tiff`, `webp` |

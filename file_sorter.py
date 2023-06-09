@@ -3,6 +3,7 @@ import shutil
 import sys
 
 file_extensions = {
+    "7z": "Compressed Folders",
     "avi": "Videos",
     "bat": "Programs",
     "c": "Programming",
@@ -13,6 +14,7 @@ file_extensions = {
     "docx": "Documents",
     "exe": "Programs",
     "gif": "GIFs",
+    "gz": "Compressed Folders",
     "h": "Programming",
     "htm": "Websites",
     "html": "Websites",
@@ -37,6 +39,7 @@ file_extensions = {
     "py": "Programming",
     "rtf": "Documents",
     "svg": "Images",
+    "tar": "Compressed Folders",
     "tiff": "Images",
     "ts": "Programming",
     "txt": "Documents",
@@ -57,10 +60,10 @@ file_extensions = {
 directory = os.getcwd()
 files = os.listdir(directory)
 
-print("[44m DIRECTORY [0m", directory)
+print("Directory:", directory)
 print()
 
-confirm = input("Are you sure you want to sort these files? [y/N]\n>> ")
+confirm = input("Sort files? [y/N]\n>> ")
 confirm = confirm.lower()
 
 if confirm == "y" or confirm == "yes":
@@ -82,19 +85,19 @@ if confirm == "y" or confirm == "yes":
 
         if not os.path.isdir(destination):
             os.mkdir(destination)
-            print("[35mDirectory Created:[0m", destination.rsplit("\\", 1)[1])
+            print("Created Directory:", destination.rsplit("\\", 1)[1])
 
         shutil.move(file, destination)
-        print("[34mFile Moved[0m: \"" + file + "\" to \"" + destination.rsplit("\\", 1)[1] + "\"")
+        print("Moved \"" + file + "\" to \"" + destination.rsplit("\\", 1)[1] + "\"")
 
     if amount == 0:
-        print("[41m ERROR [0m No files to be sorted.\n")
+        print("Error: No files to be sorted.\n")
         os.system("pause")
         sys.exit()
 
     print()
     os.system("pause")
 else:
-    print("\n[41m ERROR [0m Operation cancelled by user.\n")
+    print("\nError: Operation cancelled.\n")
     os.system("pause")
     sys.exit()
